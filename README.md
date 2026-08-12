@@ -14,20 +14,22 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 
 ## 🚀 Status do Desenvolvimento
 
-> 🚧 **Em andamento:** No momento, o projeto encontra-se na fase de **estruturação semântica em HTML5**.
+> 🎨 **Em andamento:** No momento, o projeto encontra-se na fase de **estilização visual com CSS3**.
 
 * [x] Estruturação da página principal (`index.html`)
 * [x] Criação das seções institucionais e formulários em HTML
 * [ ] Estilização visual e responsividade com CSS3 *(Próxima etapa)*
 * [ ] Interatividade e validações dinâmicas com JavaScript *(Etapa futura)*
 
+**Última atualização:** HTML concluído ✅ | Iniciando CSS...
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5:** Estruturação semântica do conteúdo.
-* **CSS3:** *(A ser implementado)* Design, layout e responsividade.
-* **JavaScript:** *(A ser implementado)* Interatividade, manipulação do DOM e validação de dados.
+* **HTML5:** Estruturação semântica do conteúdo. ✅ *Concluído*
+* **CSS3:** Design, layout e responsividade. 🎨 *Em desenvolvimento*
+* **JavaScript:** Interatividade, manipulação do DOM e validação de dados. *(A ser implementado)*
 
 ---
 
