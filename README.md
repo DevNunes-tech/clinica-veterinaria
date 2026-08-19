@@ -14,21 +14,21 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 
 ## 🚀 Status do Desenvolvimento
 
-> 🎨 **Em andamento:** No momento, o projeto encontra-se na fase de **estilização visual com CSS3**.
+> 🎨 **Em andamento:** A estrutura HTML e a primeira versão da estilização visual estão implementadas.
 
-* [x] Estruturação da página principal (`index.html`)
+* [x] Estruturação da página principal (`dashboard/index.html`)
 * [x] Criação das seções institucionais e formulários em HTML
-* [ ] Estilização visual e responsividade com CSS3 *(Próxima etapa)*
+* [x] Estilização visual inicial e banner com imagem de fundo
 * [ ] Interatividade e validações dinâmicas com JavaScript *(Etapa futura)*
 
-**Última atualização:** HTML concluído ✅ | Iniciando CSS...
+**Última atualização:** HTML e CSS iniciais concluídos ✅ | JavaScript pendente...
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica do conteúdo. ✅ *Concluído*
-* **CSS3:** Design, layout e responsividade. 🎨 *Em desenvolvimento*
+* **CSS3:** Design, layout, banner e responsividade inicial. ✅ *Implementado*
 * **JavaScript:** Interatividade, manipulação do DOM e validação de dados. *(A ser implementado)*
 
 ---
@@ -37,22 +37,25 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 
 ```text
 .
-├── index.html          # Página principal (estrutura HTML)
-├── css/                # Diretório reservado para folhas de estilo
-├── js/                 # Diretório reservado para scripts JavaScript
 ├── assets/             # Imagens e recursos visuais
+│   ├── cachorro e gato.png
+│   └── hero.webp       # Imagem de fundo do banner
+├── dashboard/          # Página principal e estilos
+│   ├── index.html
+│   └── styles/
+│       └── styles.css
 └── README.md           # Documentação do projeto
 
 ```
 
 ---
 
-## 📄 Estrutura da Página (`index.html`)
+## 📄 Estrutura da Página (`dashboard/index.html`)
 
 A versão atual do código HTML contempla as seguintes seções semânticas:
 
 1. **Cabeçalho (`<header>`):** Logotipo e menu de navegação.
-2. **Banner Principal (`<section id="hero">`):** Apresentação e chamada para ação (CTA).
+2. **Banner Principal (`<section class="hero">`):** Apresentação com imagem de fundo e chamada para ação (CTA).
 3. **Sobre a Clínica (`<section id="sobre">`):** Missão, visão e estrutura da clínica.
 4. **Serviços (`<section id="servicos">`):** Listagem de especialidades (consultas, exames, vacinação, banho e tosa).
 5. **Agendamento (`<section id="agendamento">`):** Formulário para solicitação de consultas e procedimentos.
@@ -77,7 +80,7 @@ cd clinica-veterinaria
 ```
 
 
-3. Abra o arquivo `index.html` em qualquer navegador web de sua preferência.
+3. Abra o arquivo `dashboard/index.html` em qualquer navegador web de sua preferência.
 
 ---
 
