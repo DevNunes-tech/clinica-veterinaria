@@ -19,6 +19,7 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 * [x] Estruturação da página principal (`dashboard/index.html`)
 * [x] Criação das seções institucionais e formulários em HTML
 * [x] Estilização visual inicial, banner com imagem de fundo e rodapé
+* [x] Organização responsiva com Flexbox no menu, serviços e formulário
 * [x] Formulário visual de contato/agendamento
 * [ ] Processamento do formulário e validações dinâmicas com JavaScript *(Etapa futura)*
 
@@ -29,7 +30,7 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica do conteúdo. ✅ *Concluído*
-* **CSS3:** Design, layout, banner, cards de serviços e responsividade inicial. ✅ *Implementado*
+* **CSS3:** Design, layout, banner, cards de serviços e responsividade inicial com Flexbox. ✅ *Implementado*
 * **JavaScript:** Interatividade, manipulação do DOM e validação de dados. *(A ser implementado)*
 
 ---
@@ -42,10 +43,11 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 │   ├── cachorro e gato.png
 │   └── hero.webp       # Imagem de fundo do banner
 ├── dashboard/          # Página principal e estilos
-│   ├── index.html
+│   ├── index.html        # Página principal
 │   └── styles/
-│       └── styles.css
-└── README.md           # Documentação do projeto
+│       └── styles.css    # Estilos e regras de layout
+├── LICENSE              # Licença de uso estudantil
+└── README.md            # Documentação do projeto
 
 ```
 
@@ -56,12 +58,17 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 A versão atual do código HTML contempla as seguintes seções semânticas:
 
 1. **Cabeçalho (`<header>`):** Logotipo e menu de navegação.
-2. **Banner Principal (`<section class="hero">`):** Apresentação com imagem de fundo e chamada para ação (CTA).
+2. **Banner Principal (`<section class="secao hero">`):** Apresentação com imagem de fundo e chamada para ação (CTA).
 3. **Sobre a Clínica (`<section id="sobre">`):** Missão, visão e estrutura da clínica.
-4. **Serviços (`<section id="servicos">`):** Listagem de especialidades (consultas, exames, vacinação, banho e tosa).
-5. **Agendamento (`<section id="agendamento">`):** Formulário para solicitação de consultas e procedimentos.
-6. **Contato e Localização (`<section id="contato">`):** Informações de endereço, telefone e horário de funcionamento.
-7. **Rodapé (`<footer>`):** Direitos autorais e links secundários.
+4. **Serviços (`<section id="servicos">`):** Cards de consultas veterinárias, banho e tosa e pet shop organizados com Flexbox.
+5. **Contato (`<section id="contato">`):** Formulário visual para solicitação de atendimento, organizado verticalmente com Flexbox.
+6. **Rodapé (`<footer>`):** Direitos autorais e informações institucionais.
+
+### Uso do Flexbox
+
+O CSS utiliza Flexbox para centralizar o menu de navegação, distribuir os
+cards de serviços com quebra de linha em telas menores e organizar os campos
+do formulário em coluna.
 
 ---
 
@@ -93,3 +100,22 @@ Como o projeto é estático nesta etapa, não é necessário instalar dependênc
 * **Curso:** Bacharelado em Inteligência Artificial — 2º Período
 * **Instituição:** Faculdade PIT (Piauí Instituto de Tecnologia)
 * **Professor:** Prof. Martins
+
+---
+
+## 📜 Licença de Uso
+
+Este projeto possui uma **Licença de Uso Estudantil e Modificação Controlada**
+e destina-se exclusivamente a fins educacionais, acadêmicos e de estudo.
+
+É permitido consultar e executar o projeto para esses fins, desde que os
+créditos do autor sejam mantidos. Qualquer alteração, adaptação, inclusão,
+exclusão ou outra modificação no código-fonte exige **autorização prévia e
+expressa do autor**, que deve ser solicitada antes de mexer no código ou
+reutilizá-lo.
+
+Também não é permitida a cópia, publicação, distribuição, sublicenciamento,
+comercialização ou incorporação do projeto, total ou parcialmente, em outro
+projeto sem essa autorização.
+
+Os termos completos estão no arquivo [LICENSE](LICENSE).
