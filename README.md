@@ -14,21 +14,22 @@ O sistema visa apresentar os serviços oferecidos, permitir o agendamento de con
 
 ## 🚀 Status do Desenvolvimento
 
-> 🎨 **Em andamento:** A estrutura HTML e a primeira versão da estilização visual estão implementadas.
+> 🎨 **Em andamento:** A página institucional está estruturada em HTML e estilizada com CSS responsivo inicial.
 
 * [x] Estruturação da página principal (`dashboard/index.html`)
 * [x] Criação das seções institucionais e formulários em HTML
-* [x] Estilização visual inicial e banner com imagem de fundo
-* [ ] Interatividade e validações dinâmicas com JavaScript *(Etapa futura)*
+* [x] Estilização visual inicial, banner com imagem de fundo e rodapé
+* [x] Formulário visual de contato/agendamento
+* [ ] Processamento do formulário e validações dinâmicas com JavaScript *(Etapa futura)*
 
-**Última atualização:** HTML e CSS iniciais concluídos ✅ | JavaScript pendente...
+**Situação atual:** HTML e CSS iniciais implementados ✅ | JavaScript e integração do formulário pendentes...
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica do conteúdo. ✅ *Concluído*
-* **CSS3:** Design, layout, banner e responsividade inicial. ✅ *Implementado*
+* **CSS3:** Design, layout, banner, cards de serviços e responsividade inicial. ✅ *Implementado*
 * **JavaScript:** Interatividade, manipulação do DOM e validação de dados. *(A ser implementado)*
 
 ---
@@ -81,6 +82,8 @@ cd clinica-veterinaria
 
 
 3. Abra o arquivo `dashboard/index.html` em qualquer navegador web de sua preferência.
+
+Como o projeto é estático nesta etapa, não é necessário instalar dependências ou executar um servidor para visualizar a página.
 
 ---
 
