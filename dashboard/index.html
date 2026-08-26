@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <h1>ApholloxVET</h1>
         <nav>
         <ul>
@@ -37,7 +37,7 @@
         </section>
         <section class="secao" id="servicos">
             <h2>Nossos Serviços</h2>
-            <div>
+            <div class="container-servicos">
                 <div class="servico">
                     <h3>🐾 Consultas Veterinárias</h3>
                     <p>Atendimento clínico, exames preventivos e acompanhamento da saúde do seu pet.</p>
@@ -55,12 +55,12 @@
         <section class="secao" id="contato">
             <h2>Agende um Atendimento</h2>
             <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
-            <form>
+            <form id="form-contato">
                 <input type="text" name="nome" id="nome" placeholder="Nome">
                 <input type="email" name="email" id="email" placeholder="Email">
                 <input type="text" name="assunto" id="assunto" placeholder="Assunto">
                 <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn-enviarForm">Enviar</button>
             </form>
         </section>
     </main>
