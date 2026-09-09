@@ -1,155 +1,244 @@
-:root{
-    --azul: #2e8bc0;
-    --azul-claro: #73c2fb;
-    --azul-hover-card: #eaf7fd;
-    --verde-whatsapp: #4caf50;
+:root {
+    --azul: #2E8BC0;
+    --azul-claro: #73C2FB;
+    --azul-hover-card: #EAF7FD;
+    --verde-whatsapp: #4CAF50;
     --branco: #ffffff;
     --cinza: #f4f6f8;
-    --preto: #2c3e50;
+    --preto: #2C3E50;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cinza);
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cinza);
     color: var(--preto);
 }
 
-header{
-    background-color: var(--azul);
+.cabecalho {
+    background: var(--azul);
     color: var(--branco);
-    padding: 20px;
     text-align: center;
     padding: 20px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin-top: 10px;
-}
-nav li{
-    display: inline-block;
-    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-nav a{
-    text-decoration: none;
+nav a {
     color: var(--branco);
+    text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover{
-    color: var(--azul-claro);
+nav a:hover {
     opacity: 0.8;
 }
 
-.secao.hero{
+.hero {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.22)), url('../../assets/hero.webp');
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 380px;
-    max-width: none;
-    margin: 0;
-    padding: 0 20px;
     color: var(--branco);
     text-align: center;
+    padding: 200px 20px;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 38px;
     margin-bottom: 15px;
 }
 
-.hero p{
+.hero p {
     font-size: 20px;
 }
 
-.secao{
-    background-color: var(--branco);
+.secao {
+    background: var(--branco);
+    max-width: 900px;
     margin: 30px auto;
-    max-width: 1200px;
-    padding: 40px;
+    padding: 40px 20px;
     border-radius: 6px;
     text-align: center;
-    
 }
 
-.secao h2{
-    font-size: 28px;
+.secao h2 {
+    color: var(--azul);
     margin-bottom: 20px;
 }
 
-.secao p{
+.secao p {
     line-height: 1.6;
 }
 
-.container-servicos{
-    margin-top: 10px;
+.container-servicos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.servico{
+.servico {
     background: var(--cinza);
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 6px;
+    width: 250px;
+    transition: 0.3s;
 }
 
-.servico:hover{
+.servico:hover {
     background: var(--azul-hover-card);
     transform: translateY(-5px);
 }
 
-.servico h3{
-    color: var(--azul);
+#form-contato {
+    max-width: 500px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-form{
-    margin-top: 20px;
-}
-
-input,
-textarea{
-    width: 100%;
-    margin-top: 12px;
-    border-radius: 5px;
+#form-contato input,
+#form-contato textarea {
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-textarea{
+#form-contato textarea {
     resize: vertical;
 }
 
-.btn-enviar-Form{
-    padding: 12px 25px;
-    border-radius: 5px;
-    border: none;
+.btn-enviarForm {
+    display: inline-block;
+    padding: 10px 20px;
     background: var(--azul);
     color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-enviarForm:hover {
+    background: var(--verde-whatsapp);
+}
+
+footer {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.chat-widget {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    width: 280px;
+    background: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.usuario {
+    align-self: flex-end;
+    background: var(--azul-claro);
+    color: var(--branco);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.bot {
+    align-self: flex-start;
+    background: var(--cinza);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.chat-input-area {
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.chat-input-area button {
+    background: var(--azul);
+    color: var(--branco);
+    border: none;
+    padding: 8px 12px;
     cursor: pointer;
 }
 
-.btn-enviar-Form :hover{
-    background: var(--verde-whatsapp)
-}
-
-footer{
-    background-color: var(--azul);
-}
-
-footer{
-    background-color: var(--azul);
-    color: var(--branco);
-    padding: 15px;
-    text-align: center;
-    margin-top: 30px;
+.chat-input-area button:hover {
+    background: var(--azul-claro);
 }

@@ -4,37 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApholloxPET - Pet Shop & Clínica Veterinária</title>
-    <link rel="stylesheet" href="../dashboard/styles/styles.css">
+    <title>ApholloxVET - Pet Shop & Clínica Veterinária</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header class="cabecalho">
         <h1>ApholloxVET</h1>
         <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    
 
-    <section class="secao hero">
-        <div class="banner">
+    <section id="inicio" class="hero">
+        <div class="hero-content">
             <h2>Cuidando da saúde e do bem-estar do seu melhor amigo</h2>
-            <p>Pet Shop completo e Clínica Veterinária com atendimento especializado.</p>
+            <p>Pet Shop completo e Clínica Veterinária com atendimento especializado. 🐶🐱</p>
         </div>
     </section>
+
     <main>
         <section class="secao" id="sobre">
             <h2>Sobre Nós</h2>
-            <p>A ApholloxVet é um Pet Shop e Clínica Veterinária que oferece atendimento humanizado, profissionais
+            <p>A ApholloxVET é um Pet Shop e Clínica Veterinária que oferece atendimento humanizado, profissionais
                 qualificados e uma estrutura moderna para cuidar da saúde, higiene e qualidade de vida dos animais de
                 estimação. Nosso compromisso é proporcionar segurança, conforto e carinho em cada atendimento.</p>
         </section>
+
         <section class="secao" id="servicos">
             <h2>Nossos Serviços</h2>
             <div class="container-servicos">
@@ -52,22 +54,42 @@
                 </div>
             </div>
         </section>
-        <section class="secao" id="contato">
+
+        <section class="secao contato" id="contato">
             <h2>Agende um Atendimento</h2>
             <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+
             <form id="form-contato">
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="assunto" id="assunto" placeholder="Assunto">
-                <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
                 <button type="submit" class="btn-enviarForm">Enviar</button>
             </form>
         </section>
     </main>
+
     <footer>
-        <p> &copy; 2026 ApholloxVet - Pet Shop & Clínica Veterinária</p>
+        <p>&copy; 2026 ApholloxVET - Pet Shop & Clínica Veterinária</p>
     </footer>
 
+    <button id="chat-toggle" class="chat-toggle">🤖</button>
+
+    <div id="chat" class="chat-widget hidden">
+        <div class="chat-header">
+            <p>Atendimento</p>
+            <button id="fechar" type="button">X</button>
+        </div>
+
+        <div id="chat-box" class="chat-box">
+            <div class="bot">Olá! 👋 Bem-vindo à ApholloxVET. Como posso ajudar?</div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="input" placeholder="Digite sua mensagem...">
+            <button id="enviar" type="button">Enviar</button>
+        </div>
+    </div>
 </body>
 
 </html>
